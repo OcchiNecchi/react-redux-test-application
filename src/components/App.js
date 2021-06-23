@@ -1,4 +1,3 @@
-// Stateについて
 import React, { Component } from "react";
 import { connect } from 'react-redux'
 
@@ -18,10 +17,13 @@ class App extends Component {
   }
 }
 
+// mapStateToProps：Storeが持つ状態stateをどのようにpropsに混ぜ込むかを決める
 const mapStateToProps = state => ({
   value: state.count.value
 })
 
+// mapDispatchToProps：Reducerにアクションを通知する関数dispatchを
+// どのようにpropsに混ぜ込むかを決める
 const mapDispatchToProps = dispatch => ({
   increment: () => dispatch(increment()),
   decrement: () => dispatch(decrement())
