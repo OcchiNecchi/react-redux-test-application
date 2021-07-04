@@ -18,12 +18,11 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <Switch>
-        <Route exact path="events/new" component={EventsNew} />
+        <Route exact path="/events/new" component={EventsNew} />
         <Route exact path="/" component={EventsIndex} />
       </Switch>
     </BrowserRouter>
-  </Provider>
-  ,
+  </Provider>,
   document.getElementById('root')
 );
 
@@ -31,3 +30,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
